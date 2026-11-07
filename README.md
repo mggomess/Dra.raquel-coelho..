@@ -36,3 +36,15 @@ npm run build   # CSS final minificado
 - **WhatsApp:** número `556992165145` (busque e troque em `public/index.html`).
 - **Clientes atendidos:** na seção #numeros, informe o número em data-counter e apague o atributo hidden do bloco.
 - **Domínio:** em Vercel > Settings > Domains.
+
+## Avaliações do Google
+
+A seção #avaliacoes busca as avaliações reais do perfil no Google pela função `api/reviews.js` (se não estiver configurada, mostra as avaliações fixas de `public/js/avaliacoes.js`).
+
+1. No Google Cloud, crie um projeto, ative a **Places API (New)** e gere uma chave de API (restrinja a chave à Places API).
+2. Na Vercel: **Settings > Environment Variables** e crie `GOOGLE_PLACES_API_KEY` com a chave.
+   Opcional: `GOOGLE_PLACE_ID` (se vazio, a função localiza o perfil pelo nome e endereço).
+3. Faça um novo deploy. O resultado fica em cache por 24 h.
+
+Limite da API oficial do Google: ela devolve no máximo as 5 avaliações mais relevantes. O botão
+"Ver todas as avaliações no Google" leva ao perfil completo.
