@@ -25,6 +25,14 @@
   .card {
     @apply rounded-sm border border-gold/30 bg-ink-3/70 transition duration-200 hover:border-gold hover:bg-gold/[.07];
   }
+  .gold-num {
+    @apply bg-gold-text bg-clip-text text-transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  .photo-vignette {
+    -webkit-mask-image: radial-gradient(ellipse 56% 54% at 50% 44%, #000 38%, rgba(0,0,0,.5) 66%, transparent 100%);
+    mask-image: radial-gradient(ellipse 56% 54% at 50% 44%, #000 38%, rgba(0,0,0,.5) 66%, transparent 100%);
+  }
   .fade-bottom {
     -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 68%, rgba(0,0,0,.55) 84%, transparent 100%);
     mask-image: linear-gradient(to bottom, #000 0%, #000 68%, rgba(0,0,0,.55) 84%, transparent 100%);
