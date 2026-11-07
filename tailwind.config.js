@@ -1,7 +1,7 @@
 /** Identidade visual Raquel Coelho: preto quente + dourado metálico. */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./public/**/*.html'],
+  content: ['./public/**/*.{html,js}'],
   theme: {
     extend: {
       colors: {
