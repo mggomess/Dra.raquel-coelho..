@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+  body { @apply bg-ink font-sans text-ivory antialiased; }
+  :focus-visible { @apply outline outline-2 outline-offset-2 outline-gold-hi; }
+}
+
+@layer components {
+  .wrap { @apply mx-auto w-full max-w-6xl px-6; }
+  .eyebrow { @apply font-sans text-xs font-medium uppercase tracking-label text-gold sm:text-[13px]; }
+  .section-title { @apply font-display text-4xl font-medium leading-[1.05] sm:text-5xl lg:text-[3.5rem]; text-wrap: balance; }
+  .section-lead { @apply font-sans text-base font-light leading-relaxed text-ivory/80 sm:text-lg; }
+  .gold-text {
+    @apply bg-gold-text bg-clip-text font-semibold italic text-transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  .btn {
+    @apply inline-flex min-h-[52px] items-center justify-center gap-3 rounded-sm px-7 py-3.5 text-center text-sm font-medium uppercase leading-snug tracking-[.08em] transition duration-200 sm:whitespace-nowrap;
+  }
+  .btn-gold { @apply bg-gold-metal text-[#1A1405] shadow-gold hover:-translate-y-0.5 hover:shadow-gold-lg; }
+  .btn-line { @apply border border-gold/55 text-gold-hi hover:border-gold-hi hover:bg-gold/10; }
+  .card {
+    @apply rounded-sm border border-gold/30 bg-ink-3/70 transition duration-200 hover:border-gold hover:bg-gold/[.07];
+  }
+  .fade-bottom {
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 68%, rgba(0,0,0,.55) 84%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 0%, #000 68%, rgba(0,0,0,.55) 84%, transparent 100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
