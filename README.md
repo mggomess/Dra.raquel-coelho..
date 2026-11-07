@@ -34,6 +34,5 @@ npm run build   # CSS final minificado
 ## Para ajustar
 
 - **WhatsApp:** número `556992165145` (busque e troque em `public/index.html`).
-- **Elogios:** a seção #elogios convida o cliente a avaliar no Google ou enviar pelo WhatsApp. Para publicar elogios reais (com autorização e conforme o Provimento 205/2021 da OAB), siga o comentário no HTML.
 - **Clientes atendidos:** na seção #numeros, informe o número em data-counter e apague o atributo hidden do bloco.
 - **Domínio:** em Vercel > Settings > Domains.
